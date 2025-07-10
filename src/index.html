@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age cal</title>
+   <link rel="stylesheet" href="./output.css">
+   
+</head>
+<body class="font-IBM bg-black min-h-screen flex items-center justify-center px-4 py-10">
+
+    <div class="bg-white w-full max-w-2xl rounded-3xl container flex flex-col justify-center p-6 md:p-10 gap-8 shadow-lg mx-auto">
+
+        <h1 class="text-3xl  flex justify-center "> Age Calculator</h1>
+        <h4 class=" text-sm flex justify-center">Select your date of birth: </h4>
+
+        <div class="datesection flex flex-col justify-center">
+           <input class="flex justify-center border-2 border-dashed border-red-600 animate-pulse rounded-xl h-[40px] hover:scale-105 date-box" type="date">
+           
+           <button class="mt-5 bg-black text-white rounded-2xl h-[40px] hover:scale-90 cursor-pointer cal-btn">Calculate</button>
+        </div>
+        <div class="flex justify-center display">
+                <h2 class="text-xl">Your age is </h2>
+
+        </div>
+        <div class="grid grid-cols-3 gap-3 h-[70px]  elements">
+            <div class=" bg-zinc-800 rounded-xl flex flex-col items-center justify-center years">
+            
+                <h2 class="text-white  ">-</h2>
+                <h5 class="text-neutral-400">Years</h5>
+
+            </div>
+            <div class=" bg-zinc-800  rounded-xl flex flex-col  items-center justify-center  months">
+                <h2 class="text-white  ">-</h2>
+                <h5 class="text-neutral-400">Months</h5>
+            </div>
+            <div class=" bg-zinc-800  rounded-xl flex flex-col  items-center justify-center  days ">
+                 <h2 class="text-white  ">-</h2>
+                 <h5 class="text-neutral-400">Days</h5>
+            </div>
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
